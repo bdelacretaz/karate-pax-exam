@@ -6,11 +6,11 @@ function() {
 
   var config = {
     env: env,
-    baseURL: karate.properties["mock.server.url"]
+    baseURL: karate.properties["test.server.url"]
   }
 
   karate.log('karate.env=', env);
-  karate.log('baseULR=', env);
+  karate.log('baseURL=', env);
 
   return config;
 }

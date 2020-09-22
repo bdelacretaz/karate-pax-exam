@@ -1,8 +1,14 @@
-# karate-mini-mocks
-A minimal example using [Karate Test Doubles](https://github.com/intuit/karate/tree/master/karate-netty) to mock and test HTTP services
+# karate-pax-exam
 
-The [server.feature](src/test/java/server/server.feature) is Karate Test Doubles code that simulates an HTTP server.
+A minimal example using Karate to test OSGi services.
 
-The [client.feature](src/test/java/client/client.feature) tests it using the very readable Karate syntax.
+Running the tests with
 
-The rest is glue, and there's not much of it!
+    mvn clean install
+
+Starts an OSGi framework with the Apache Felix Web Console, and tests
+access via HTTP "from the outside".
+
+This test mimics the [AcceptanceTestApiTest](https://github.com/ops4j/org.ops4j.pax.exam2/blob/master/drivers/pax-exam-acceptance/src/test/java/org/ops4j/pax/exam/acceptance/AcceptanceTestApiTest.java) from the (unreleased so far)
+`pax-exam-acceptance` module, to show how to run Karate tests against
+OSGi-based HTTP services.
