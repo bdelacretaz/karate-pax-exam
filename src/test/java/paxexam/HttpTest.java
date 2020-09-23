@@ -35,6 +35,7 @@ public class HttpTest {
             bundle("mvn:org.apache.felix/org.apache.felix.webconsole/4.2.16/jar/all"),
             bundle("mvn:org.apache.felix/org.apache.felix.configadmin/1.8.14"),
             bundle("mvn:org.apache.felix/org.apache.felix.log/1.2.4"),
+            bundle("mvn:javax.annotation/javax.annotation-api/1.3.1"),
             //vmOption("-Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=7788"),
         };
      }
